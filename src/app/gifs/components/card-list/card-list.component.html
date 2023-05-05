@@ -1,20 +1,11 @@
 <div class="row">
 
-  <div *ngFor="let gif of gifs" class="col-md-3 col-sm-6"> <!-- col-md-3: que en pantallas medianas la s columnas ocupen 3 posiciones 7y en pantallas muy pequeñas 6 el total es 12 partes-->
+  <gif-card
+    [gif]="gif"
+    *ngFor="let gif of gifs"
+    class="col-md-3 col-sm-6"> <!-- col-md-3: que en pantallas medianas la s columnas ocupen 3 posiciones 7y en pantallas muy pequeñas 6 el total es 12 partes-->
 
-    <div class="card mb-2 text-center bg-dark">
 
-      <div class="card-body text-white">
-
-        <img [src]="gif.images.downsized_medium.url" [alt]="gif.title" class="card-img">
-
-        <p class="card-text">h
-          {{ gif.title }}
-        </p>
-      </div>
-
-    </div>
-
-  </div>
+  </gif-card>
 
 </div>

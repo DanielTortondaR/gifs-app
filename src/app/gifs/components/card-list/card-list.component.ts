@@ -2,7 +2,7 @@ import { Component, Input } from '@angular/core';
 import { Gif } from '../../interfaces/gifs.interfaces';
 
 @Component({
-  selector: 'gifs-card-list',
+  selector: 'gifs-card-list-box',
   templateUrl: './card-list.component.html',
 })
 export class CardListComponent {
